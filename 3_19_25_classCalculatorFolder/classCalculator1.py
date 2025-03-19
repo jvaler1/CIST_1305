@@ -1,6 +1,8 @@
 # Create a module named calc_one
 # It will take 2 inputs and do addition, subtraction, multiplication, division, and modulus
 
+
+# Imports module for calculation
 import calc_one
 
 def main():
@@ -8,7 +10,7 @@ def main():
     num1, num2, operation = num_input()
     output(num1, num2, operation)
 
-
+# Calculates and prints output based on input
 def output(num1, num2, operation):
     print(f"\nYou input {num1} and {num2}, then selected {operation}. The output is:\n")
 
@@ -27,7 +29,8 @@ def output(num1, num2, operation):
         case _:
             print(f"Error: The operation input {operation} was invalid")
             
-
+# Takes 2 numbers and an operation as input.
+# Haven't put in any data validation yet aside from removing case sensitivity
 def num_input():
 
     num1 = int(input("Input first number to calculate: "))
