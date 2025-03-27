@@ -18,20 +18,20 @@ def listHighest(localList):
     for x in localList:
         if x > highest:
             highest = x
-    print(f"Highest: {highest}")
+    return highest
 
 def listLowest(localList):
     lowest = localList[0]
     for x in localList:
         if x < lowest:
             lowest = x
-    print(f"Lowest: {lowest}")
+    return lowest
 
 def main():
     numList = getRandomList(1, 100, 20)
-    
+
     print(numList)
-    listHighest(numList)
-    listLowest(numList)
+    print(f"Highest: {listHighest(numList)}")
+    print(f"Lowest: {listLowest(numList)}")
 
 main()
