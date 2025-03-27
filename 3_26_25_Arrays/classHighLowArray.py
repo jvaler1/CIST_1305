@@ -28,7 +28,7 @@ def listLowest(localList):
     print(f"Lowest: {lowest}")
 
 def main():
-    numList = getRandomList(-100, 100, 10)
+    numList = getRandomList(1, 100, 20)
     print(numList)
     listHighest(numList)
     listLowest(numList)
