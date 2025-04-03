@@ -8,13 +8,17 @@ def userInput():
     grades = []
 
     studentsNum = int(input("How many students are there? "))
+    # Create array of student names
     for x in range(studentsNum):
         studentsInput = input(f"Input name of student {x + 1}: ")
         students.append(studentsInput)
     
     gradesNum = 3
+    # Makes each position in grades array correspond to a student name in students array
     for s in range(len(students)):
+        # Intermediary array to append to grades to make an array of arrays
         gradesInputArray = []
+        # Input grades and apply them to intermediary array, then combine them into main grades array
         for g in range(gradesNum):
             gradesInput = round(float(input(f"Input grade {g + 1} for {students[s]}: ")), 2)
             gradesInputArray.append(gradesInput)
