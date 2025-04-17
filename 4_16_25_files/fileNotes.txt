@@ -1,0 +1,5 @@
+file_variable = open("filename.extension", "mode")
+"r" | Open a file for reading only. The file cannot be changed or written to.
+"w" | Open a file for writing. If the file already exists, erase it's contents. If it does not exist, create it.
+"a" | Open a file to be written to. All data written to the file will be appended to it's end. If the file does not exist, create it.
+file_variable.close()
